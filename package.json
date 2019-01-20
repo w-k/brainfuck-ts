@@ -1,0 +1,28 @@
+{
+  "name": "brainfuck-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "build": "rollup -c rollup.config.js",
+    "interpret": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "bf-ts": "./dist/index.js"
+  },
+  "dependencies": {
+    "magic-string": "^0.25.1",
+    "rollup": "^0.68.2",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "tslib": "^1.9.3",
+    "tslint": "^5.12.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  }
+}
